@@ -1,0 +1,76 @@
+body {
+  background-color:#000000;
+  background-image: url('/Images/pretoEVermelho.jpg');
+  background-size: cover;
+  }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100%;
+}
+
+
+h2
+  
+  .container-fluid {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-top: 10px;
+  }
+  
+  .sidebar {
+    background: linear-gradient(to bottom, #000 0, #fa1a1a 90%);
+    width: 09%;
+    height: 100%;
+    z-index: auto;
+    padding: 62px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  .sidebar-sticky {
+    top: 0;
+    height: 120vh;
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; 
+  }
+  
+  .nav-link {
+    font-size:large;
+    color: #ffffff; 
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  main {
+    padding-top: 20px;
+  }
+  
+  
+  .btn-toolbar {
+    margin-bottom: 20px;
+  }
+  
+  .btn-outline-primary,
+  .btn-outline-danger {
+    margin-right: 10px;
+  }
+  
+  h1, h2 {
+    color: #a30e0e; 
+  }
+  
+  .list-group-item {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f0f0f0; 
+  }
+  

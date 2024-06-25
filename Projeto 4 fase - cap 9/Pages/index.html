@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registros Financeiros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <nav>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Registros
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Perfil
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Sair
+                </a>
+              </li>          
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <header class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Registros Financeiros</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button class="btn btn-sm btn-outline-primary" id="btnAddRecebimento">Adicionar Recebimento</button>
+              <button class="btn btn-sm btn-outline-danger" id="btnAddGasto">Adicionar Gasto</button>
+            </div>
+          </div>
+        </header>
+        
+        <section class="row">
+          <article class="col-md-6">
+            <h2>Registros de Recebimentos</h2>
+            <button class="btn btn-sm btn-outline-secondary mb-3" id="btnAddDescricaoRecebimento">Adicionar Descrição</button>
+            <ul id="recebimentos-list" class="list-group">
+              <li class="list-group-item">Recebimento 1 - R$ 100,00 (01/06/2024)</li>
+              <li class="list-group-item">Recebimento 2 - R$ 150,00 (05/06/2024)</li>
+              <li class="list-group-item">Recebimento 3 - R$ 68,00 (05/06/2024)</li>
+              <li class="list-group-item">Recebimento 4 - R$ 12,00 (05/06/2024)</li>
+              <li class="list-group-item">Recebimento 5 - R$ 720,00 (06/06/2024)</li>
+            </ul>
+          </article>
+          <article class="col-md-6">
+            <h2>Registros de Gastos</h2>
+            <button class="btn btn-sm btn-outline-secondary mb-3" id="btnAddDescricaoRecebimento">Adicionar Descrição</button>
+            <ul id="gastos-list" class="list-group">
+              <li class="list-group-item">Gasto 1 - R$ 50,00 (02/06/2024)</li>
+              <li class="list-group-item">Gasto 2 - R$ 80,00 (07/06/2024)</li>
+              <li class="list-group-item">Gasto 3 - R$ 99,00 (07/06/2024)</li>
+              <li class="list-group-item">Gasto 4 - R$ 35,00 (10/06/2024)</li>
+              <li class="list-group-item">Gasto 5 - R$ 160,00 (12/06/2024)</li>
+            </ul>
+          </article>
+        </section>
+        
+        <section class="row mt-4">
+          <div class="col-md-12">
+            <h2>Gráficos Financeiros</h2>
+            <div id="grafico-receitas" style="width:100%; height:400px; background-color:#f0f0f0;"> 
+              <p class="text-center">Gráfico de Receitas</p>
+            </div>
+            <div id="grafico-despesas" style="width:100%; height:400px; background-color:#f0f0f0; margin-top:20px;">
+              <p class="text-center">Gráfico de Despesas</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
